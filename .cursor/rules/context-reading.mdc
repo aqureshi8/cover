@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Context Reading Rule: AI_CONTEXT.md Files
+
+Always read all relevant AI_CONTEXT.md files when working with the codebase, starting with the root AI_CONTEXT.md file.
+
+## Reading Strategy:
+1. **Start with root AI_CONTEXT.md** - Always read the project root AI_CONTEXT.md first to understand the overall project structure
+2. **Read relevant folder contexts** - When working in specific folders, read their AI_CONTEXT.md files to understand the folder's purpose and contents
+3. **Read parent contexts** - When working in subfolders, read parent folder AI_CONTEXT.md files to understand the broader context
+4. **Update context understanding** - Use the information from AI_CONTEXT.md files to inform code decisions and understand the codebase architecture
+
+## When to Read Context Files:
+- Before starting any new feature or modification
+- When exploring unfamiliar parts of the codebase
+- When making architectural decisions
+- When adding new files or folders
+- When refactoring existing code
+
+## How to Use Context Information:
+- Understand the purpose and role of each folder
+- Identify the right location for new files
+- Understand existing patterns and conventions
+- Make informed decisions about code organization
+- Maintain consistency with the established project structure
+
+This ensures that all code changes align with the documented project structure and purpose.

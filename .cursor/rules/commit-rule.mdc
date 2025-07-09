@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cursor Rule: Commit Workflow
+
+## Purpose
+Standardize the commit process to ensure all changes are staged, reviewed, and committed with a high-quality, AI-generated commit message.
+
+## Workflow
+
+1. **Stage All Changes**
+   - Always use `git add -A` to stage all changes (including new, modified, and deleted files).
+
+2. **Review the Diff**
+   - Use `git diff --cached` to review all staged changes before committing.
+
+3. **Generate Commit Message**
+   - Use the output of `git diff --cached` to generate a comprehensive, conventional commit message.
+   - **Do not use chat history, intentions, or prior conversation context to generate the commit message. Only the actual diff should be used.**
+   - The commit message should:
+     - Summarize the purpose and scope of the changes.
+     - Mention any new features, bug fixes, refactors, or documentation updates.
+     - Be clear, concise, and follow best practices for commit messages.
+
+4. **Commit**
+   - Use `git commit -m "<AI-generated commit message>"` to commit the staged changes.
+
+## Example Workflow
+
+```sh
+git add -A
+git diff --cached
+# (Generate commit message from diff)
+git commit -m "feat: add new authentication flow and update UI components"
+```
+
+## Rationale
+
+- Ensures no changes are missed (including deletions).
+- Promotes careful review of changes before committing.
+- Leverages AI to create high-quality, descriptive commit messages.
+- Maintains a clean, understandable git history.
+
+## Enforcement
+
+- All contributors must follow this commit workflow for every commit.
+- Automated tools and AI assistants should use this rule when performing commits. 

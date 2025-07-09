@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Documentation Rule: AI_CONTEXT.md Files
+
+Always create and maintain AI_CONTEXT.md files for all folders in the project. These files should contain:
+
+## Required Content:
+1. **High-level information about the folder's purpose and role in the project**
+2. **Brief descriptions of immediate subdirectories and files** (no more than one line each)
+
+## Format Guidelines:
+- Use clear, concise language
+- Focus on the "why" and "what" rather than implementation details
+- Keep subdirectory/file descriptions to a single line maximum
+- Update the file whenever you add, remove, or significantly modify files/folders
+
+## Example Structure:
+```markdown
+# AI_CONTEXT.md
+
+## Folder Purpose
+This folder contains [brief description of the folder's role in the project].
+
+## Contents
+- `subfolder1/` - [one-line description]
+- `subfolder2/` - [one-line description]
+- `file1.js` - [one-line description]
+- `file2.ts` - [one-line description]
+```
+
+## When to Create/Update:
+- When creating a new folder
+- When adding new files or subdirectories
+- When significantly changing the purpose of existing files/folders
+- When the folder structure changes
+
+This documentation helps maintain project clarity and assists AI tools in understanding the codebase structure.
